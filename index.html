@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="style .css">
+</head>
+
+<body>
+    <nav class="main">
+        <ul class="navbar">
+            <li class="home">Home</li>
+            <li class="about">About</li>
+            <li class="type">Explore dishes</li>
+            <li class="contacts">Contacts</li>
+        </ul>
+    </nav>
+    <div class="heading">
+        <p class="welcome">WELCOME TO OUR RECIPE WEBSITE</p>
+    </div>
+    <div class="container">
+        <div class="box1 box">
+            <div class="image">
+                <img class="dish" src="images/misalpav.webp" alt="misalpav" height="300px" width="300px">
+            </div>
+            <button onclick="showRecipe('recipe1')">Show Recipe</button>
+
+            <div class="recipe" id="recipe1">
+                <h3>Misal Pav</h3>
+                <p>Ingredients: Sprouts, spices, pav</p>
+                <p>Steps: Cook sprouts → Add masala → Serve hot</p>
+                <button class="close-btn" onclick="closeRecipe('recipe1')">close</button>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="image">
+                <img class="dish" src="images/pavbhaji.webp" alt="pavbhaji" height="300px" width="300px">
+            </div>
+            <button onclick="showRecipe('recipe2')">Show Recipe</button>
+
+            <div class="recipe" id="recipe2">
+                <h3>Misal Pav</h3>
+                <p>Ingredients: Sprouts, spices, pav</p>
+                <p>Steps: Cook sprouts → Add masala → Serve hot</p>
+                <button class="close-btn" onclick="closeRecipe('recipe2')">close</button>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="image">
+                <img class="dish" src="images/iidli.png" alt="iidli" height="300px" width="300px">
+            </div>
+            <button onclick="showRecipe('recipe3')">Show Recipe</button>
+
+            <div class="recipe" id="recipe3">
+                <h3>Misal Pav</h3>
+                <p>Ingredients: Sprouts, spices, pav</p>
+                <p>Steps: Cook sprouts → Add masala → Serve hot</p>
+                <button class="close-btn" onclick="closeRecipe('recipe3')">close</button>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="image">
+                <img class="dish" src="images/paneer.png" alt="" height="300px" width="300px">
+            </div>
+            <button onclick="showRecipe('recipe4')">Show Recipe</button>
+
+            <div class="recipe" id="recipe4">
+                <h3>Misal Pav</h3>
+                <p>Ingredients: Sprouts, spices, pav</p>
+                <p>Steps: Cook sprouts → Add masala → Serve hot</p>
+                <button class="close-btn" onclick="closeRecipe('recipe4')">close</button>
+            </div>
+        </div>
+        <div class="box5 box">
+            <div class="image">
+                <img class="dish" src="images/poha.png" alt="poha" height="300px" width="300px">
+            </div>
+            <button onclick="showRecipe('recipe5')">Show Recipe</button>
+
+            <div class="recipe" id="recipe5">
+                <h3>Misal Pav</h3>
+                <p>Ingredients: Sprouts, spices, pav</p>
+                <p>Steps: Cook sprouts → Add masala → Serve hot</p>
+                <button class="close-btn" onclick="closeRecipe('recipe5')">close</button>
+            </div>
+        </div>
+        <div class="box6 box">
+            <div class="image">
+                <img class="dish" src="images/butter-chicken.png" alt="butter-chicken" height="300px" width="300px">
+            </div>
+            <button onclick="showRecipe('recipe6')">Show Recipe</button>
+
+            <div class="recipe" id="recipe6">
+                <h3>Misal Pav</h3>
+                <p>Ingredients: Sprouts, spices, pav</p>
+                <p>Steps: Cook sprouts → Add masala → Serve hot</p>
+                <button class="close-btn" onclick="closeRecipe('recipe6')">close</button>
+            </div>
+        </div>
+        <div class="box7 box">
+            <div class="image">
+                <img class="dish" src="images/sandwich.png" alt="sandwich" height="300px" width="300px">
+            </div>
+            <button onclick="showRecipe('recipe7')">Show Recipe</button>
+
+            <div class="recipe" id="recipe7">
+                <h3>Misal Pav</h3>
+                <p>Ingredients: Sprouts, spices, pav</p>
+                <p>Steps: Cook sprouts → Add masala → Serve hot</p>
+                <button class="close-btn" onclick="closeRecipe('recipe7')">close</button>
+            </div>
+        </div>
+        <div class="box8 box">
+            <div class="image">
+                <img class="dish" src="images/chicken-biryani.png" alt="chicken-biryani" height="300px" width="300px">
+            </div>
+            <button onclick="showRecipe('recipe8')">Show Recipe</button>
+
+            <div class="recipe" id="recipe8">
+                <h3>Misal Pav</h3>
+                <p>Ingredients: Sprouts, spices, pav</p>
+                <p>Steps: Cook sprouts → Add masala → Serve hot</p>
+                <button class="close-btn" onclick="closeRecipe('recipe8')">close</button>
+            </div>
+        </div>
+        <div class="box9 box">
+            <div class="image">
+                <img class="dish" src="images/chole bhature.webp" alt="chole-bhature" height="300px" width="300px">
+            </div>
+            <button onclick="showRecipe('recipe9')">Show Recipe</button>
+
+            <div class="recipe" id="recipe9">
+                <h3>Misal Pav</h3>
+                <p>Ingredients: Sprouts, spices, pav</p>
+                <p>Steps: Cook sprouts → Add masala → Serve hot</p>
+                <button class="close-btn" onclick="closeRecipe('recipe9')">close</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Foodie Recipes</h2>
+                <p>Delicious and easy recipes for everyone. Cook, eat, and enjoy!</p>
+            </div>
+
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Recipes</a></p>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Contact</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h2>Categories</h2>
+                <p><a href="#">Breakfast</a></p>
+                <p><a href="#">Lunch</a></p>
+                <p><a href="#">Dinner</a></p>
+                <p><a href="#">Desserts</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#">🌐</a>
+                    <a href="#">📘</a>
+                    <a href="#">📸</a>
+                    <a href="#">🐦</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Foodie Recipes | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js  ">
+    </script>
+
+</body>
+
+</html>
