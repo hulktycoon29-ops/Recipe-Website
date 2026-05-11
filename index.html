@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style .css">
 </head>
 
 <body>
     <nav class="main">
-        <ul class="navbar">
-            <li class="home">Home</li>
-            <li class="about">About</li>
-            <li class="type">Explore dishes</li>
-            <li class="contacts">Contacts</li>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <ul class="navbar" id="navLinks">
+            <li>Home</li>
+            <li>About</li>
+            <li>Explore dishes</li>
+            <li>Contacts</li>
         </ul>
     </nav>
     <div class="heading">
@@ -22,6 +24,7 @@
     </div>
     <div class="container">
         <div class="box1 box">
+            <h1 class="food">Misal Pav</h1>
             <div class="image">
                 <img class="dish" src="misalpav.webp" alt="misalpav" height="300px" width="300px">
             </div>
@@ -35,19 +38,36 @@
             </div>
         </div>
         <div class="box2 box">
+            <h1 class="food">Pav Bhaji</h1>
             <div class="image">
                 <img class="dish" src="pavbhaji.webp" alt="pavbhaji" height="300px" width="300px">
             </div>
             <button onclick="showRecipe('recipe2')">Show Recipe</button>
 
             <div class="recipe" id="recipe2">
-                <h3>Misal Pav</h3>
-                <p>Ingredients: Sprouts, spices, pav</p>
-                <p>Steps: Cook sprouts → Add masala → Serve hot</p>
+                <h3>Pav Bhaji</h3>
+                <h4>🥘Ingredients</h4>
+                <ul>
+                    <li>Potato, cauliflower, peas, capsicum</li>
+                    <li>Butter, pav bhaji masala</li>
+                    <li>Onion, tomato</li>
+                </ul>
+                <ol>
+                    <h4>👨‍🍳 Steps</h4>
+                    <li>Boil vegetables → mash them.</li>
+                    <li>Heat butter → sauté onions.</li>
+                    <li>Add tomatoes → cook till soft.</li>
+                    <li>Add pav bhaji masala → mix.</li>
+                    <li>Add mashed veggies → cook 10 min.</li>
+                    <li>Add butter + coriander.</li>
+                    <li>Toast pav in butter.</li>
+                    <li>Serve hot.</li>
+                </ol>
                 <button class="close-btn" onclick="closeRecipe('recipe2')">close</button>
             </div>
         </div>
         <div class="box3 box">
+            <h1 class="food">Iidli</h1>
             <div class="image">
                 <img class="dish" src="iidli.png" alt="iidli" height="300px" width="300px">
             </div>
@@ -61,78 +81,84 @@
             </div>
         </div>
         <div class="box4 box">
+            <h1 class="food">Butter Paneer</h1>
             <div class="image">
                 <img class="dish" src="paneer.png" alt="" height="300px" width="300px">
             </div>
             <button onclick="showRecipe('recipe4')">Show Recipe</button>
 
             <div class="recipe" id="recipe4">
-                <h3>Misal Pav</h3>
+                <h3>Butter Paneer</h3>
                 <p>Ingredients: Sprouts, spices, pav</p>
                 <p>Steps: Cook sprouts → Add masala → Serve hot</p>
                 <button class="close-btn" onclick="closeRecipe('recipe4')">close</button>
             </div>
         </div>
         <div class="box5 box">
+            <h1 class="food">Poha</h1>
             <div class="image">
                 <img class="dish" src="poha.png" alt="poha" height="300px" width="300px">
             </div>
             <button onclick="showRecipe('recipe5')">Show Recipe</button>
 
             <div class="recipe" id="recipe5">
-                <h3>Misal Pav</h3>
+                <h3>Poha</h3>
                 <p>Ingredients: Sprouts, spices, pav</p>
                 <p>Steps: Cook sprouts → Add masala → Serve hot</p>
                 <button class="close-btn" onclick="closeRecipe('recipe5')">close</button>
             </div>
         </div>
         <div class="box6 box">
+            <h1 class="food">Butter Chicken</h1>
             <div class="image">
                 <img class="dish" src="butter-chicken.png" alt="butter-chicken" height="300px" width="300px">
             </div>
             <button onclick="showRecipe('recipe6')">Show Recipe</button>
 
             <div class="recipe" id="recipe6">
-                <h3>Misal Pav</h3>
+                <h3>Butter Chicken</h3>
                 <p>Ingredients: Sprouts, spices, pav</p>
                 <p>Steps: Cook sprouts → Add masala → Serve hot</p>
                 <button class="close-btn" onclick="closeRecipe('recipe6')">close</button>
             </div>
         </div>
         <div class="box7 box">
+            <h1 class="food">Sandwich</h1>
             <div class="image">
                 <img class="dish" src="sandwich.png" alt="sandwich" height="300px" width="300px">
             </div>
             <button onclick="showRecipe('recipe7')">Show Recipe</button>
 
             <div class="recipe" id="recipe7">
-                <h3>Misal Pav</h3>
+                <h3>Sandwich</h3>
                 <p>Ingredients: Sprouts, spices, pav</p>
                 <p>Steps: Cook sprouts → Add masala → Serve hot</p>
                 <button class="close-btn" onclick="closeRecipe('recipe7')">close</button>
             </div>
         </div>
         <div class="box8 box">
+            <h1 class="food">Chicken-Biryani</h1>
             <div class="image">
                 <img class="dish" src="chicken-biryani.png" alt="chicken-biryani" height="300px" width="300px">
             </div>
             <button onclick="showRecipe('recipe8')">Show Recipe</button>
 
             <div class="recipe" id="recipe8">
-                <h3>Misal Pav</h3>
+                <h3>Chicken-Biryani</h3>
                 <p>Ingredients: Sprouts, spices, pav</p>
                 <p>Steps: Cook sprouts → Add masala → Serve hot</p>
                 <button class="close-btn" onclick="closeRecipe('recipe8')">close</button>
             </div>
         </div>
         <div class="box9 box">
+            <h1 class="food">Chole Bhature</h1>
             <div class="image">
                 <img class="dish" src="chole bhature.webp" alt="chole-bhature" height="300px" width="300px">
             </div>
             <button onclick="showRecipe('recipe9')">Show Recipe</button>
 
             <div class="recipe" id="recipe9">
-                <h3>Misal Pav</h3>
+                <h3>Chole Bhature</h3>
                 <p>Ingredients: Sprouts, spices, pav</p>
                 <p>Steps: Cook sprouts → Add masala → Serve hot</p>
                 <button class="close-btn" onclick="closeRecipe('recipe9')">close</button>
